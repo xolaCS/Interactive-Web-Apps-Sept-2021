@@ -21,6 +21,21 @@ let foo = 42;    // foo is now a number
 foo     = 'bar'; // foo is now a string
 foo     = true;  // foo is now a boolean
 
+Conditional Operators: 
+
+- is equal to == 
+- is not equal to != 
+- is (strict) equal to === ( checks data type and value )
+- is (strict) not equal to !== 
+- is greater than > 
+- is less than sign < 
+
+Logical Operators: 
+
+- Logical AND : && 
+- Logical OR : || 
+- Logical NOT : !
+
 
 Classes
     - Template 
