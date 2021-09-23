@@ -98,6 +98,8 @@ const myFunction = () => {
     let day;
     let today = new Date().getDay();
 
+    // Switch statements
+
     switch (today) {
         case 0: {
             day = "Sunday";
