@@ -36,6 +36,8 @@ Logical Operators:
 - Logical OR : || 
 - Logical NOT : !
 
+Switch Statements
+
 
 Classes
     - Template 
