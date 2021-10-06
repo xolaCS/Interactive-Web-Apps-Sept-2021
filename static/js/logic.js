@@ -2,8 +2,6 @@
 
 let currentPassword = '';
 let age = 24;
-
-console.log(age);
 let x = null;
 const y = undefined;
 console.log(y);
@@ -156,30 +154,38 @@ const JSClassArray = [student3];
 
 
 FEDClassArray.pop(); 
-console.log(FEDClassArray) ;  
+// console.log(FEDClassArray) ;  
 
 
 
 // console.log(AllStudentArr)
 
 
-console.log(student2["full name"])
-console.log(student2.name)
+// console.log(student2["full name"])
+// console.log(student2.name)
 
 
 const months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
 
-console.log(months)
+// console.log(months)
 
 months.splice(4, 1, 'May');
 
-console.log(months)
+// console.log(months)
+
+let myNum = 10; 
+
+console.log(typeof String(myNum))
+
+const myString = "20"; 
+
+console.log(typeof parseInt(myString)); 
+
 
 document.getElementById("classList").innerHTML = classArray.map( student => 
     `<li> ${student }</li>`
 ).join("")
-
 
 
         // class Pet {
