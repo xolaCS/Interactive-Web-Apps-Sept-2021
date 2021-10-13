@@ -13,20 +13,62 @@ function logNumbers(maxNum){
 }
 
 class Person {
-    firstName;
-    lastName;  
-    planet = "Earth"; 
+    _firstName;
+    _lastName;  
+    _planet = "Earth"; 
+    _idNum = "!@&#^*&@^#*&#"; 
+    _gender; 
+    
     constructor(firstName, lastName){
-        let x = 10; 
-        this.firstName = firstName ;
-        this.lastName = lastName ;
-        this.age; 
+        // let x = 10; 
+        this._firstName = firstName ;
+        this._lastName = lastName ;
+        // this.age; 
     }
-}
+
+    get firstName(){
+        // Add logic to santise 
+        return this._firstName; 
+    }
+
+    get idNum(){
+        return String(this._idNum);
+    }
+
+    set gender( opt ) {
+        this._gender = opt; 
+    }
+
+    get gender(){
+         if (this._gender === undefined) {
+            console.log("ERROR: Gender not specified")
+         } else {
+             return this._gender;
+         }
+    };
+
+
+};
 
 // logNumbers(15)
 
-let a = new Person("Anna", "Maria");
+const a = new Person("Anna", "Maria");
 
-console.log(a.name); 
+// Correct : Use getter method to access the private field 
+console.log(a.firstName); 
+
+// Incorrect : Do not access private fields directly 
+
+console.log(a._firstName); 
+
+a.gender = "Female";
+
+console.log(a.gender); 
+
+const b = new Person("Bob", "Marley");
+
+console.log(b.gender); 
+
+
+
 
