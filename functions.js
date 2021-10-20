@@ -11,3 +11,7 @@ for (num of numArr) {
 function myFunction(param1, param2, ...restParams) {
     //Process any amount of arguments
 }
+
+const mySecondaryFunction = (param1, param2, ...restParams) => {
+
+}

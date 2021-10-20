@@ -12,7 +12,7 @@ function logNumbers(maxNum){
     }
 }
 
-class Person {
+export class Person {
     _firstName;
     _lastName;  
     _planet = "Earth"; 
@@ -46,7 +46,6 @@ class Person {
              return this._gender;
          }
     };
-
 
 };
 
