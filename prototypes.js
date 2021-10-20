@@ -1,5 +1,6 @@
 import {Person} from "./oop.js"; 
 
+
 function PersonProt(firstName, lastName){
     this._firstName = firstName;
     this._lastName = lastName;
@@ -37,6 +38,15 @@ const product1 = Shirt("Polo", "Golf-Type", "Red", 250);
 console.log(product1); 
 console.log(product1.brand); 
 console.log(product1.details()); 
+
+function myFunction(name){
+    this._name = name;
+}; 
+
+let user = new myFunction("Susan"); 
+myFunction.prototype.surname = "Boiles"; 
+
+console.log(user.surname); 
 
 
 
