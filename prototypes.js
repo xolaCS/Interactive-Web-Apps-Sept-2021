@@ -44,7 +44,12 @@ function myFunction(name){
 }; 
 
 let user = new myFunction("Susan"); 
-myFunction.prototype.surname = "Boiles"; 
+let user1 = new myFunction("Jack"); 
+let user2 = new myFunction("Mike"); 
+
+myFunction.prototype.surname = function run(){
+    console.log(this._name + "is running");
+}
 
 console.log(user.surname); 
 
