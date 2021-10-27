@@ -126,6 +126,9 @@ const myFunction = () => {
         }
     }
     const updatedOutput = `Today is ${day}`;
+    localStorage.setItem('day', day);
+    localStorage.getItem('day');
+
 
     console.log(updatedOutput);
     document.getElementById("myText").innerHTML = updatedOutput;
