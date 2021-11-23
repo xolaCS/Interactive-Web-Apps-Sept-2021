@@ -11,7 +11,7 @@ Here are the built-in data structures available in JavaScript and what propertie
     -Number type
     -String type
 
-Objects (collections of properties)
+JavaScript Object Literals (collections of properties)
 
 # Dynamic typing
 
@@ -37,6 +37,7 @@ Logical Operators:
 - Logical NOT : !
 
 Switch Statements
+
 
 
 Classes
